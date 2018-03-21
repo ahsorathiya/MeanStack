@@ -1,0 +1,45 @@
+<!--
+Filename: f:\Visual Labs\VL\MeanStack\Tasks\eventdriven.html
+Path: f:\Visual Labs\VL\MeanStack\Tasks
+Created Date: Tuesday, March 20th 2018, 6:45:50 pm
+Author: AliHusain Sorathiya
+
+Copyright (c) 2018 Visual Labs IT services
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Driven Program</title>
+
+</head>
+
+<body>
+    <span>First Name:
+        <input type="text" id="firstname">
+        <input type="button" id="fbutton" value="Display FIrst Name">
+    </span>
+    </br>
+    <span>Second Name:
+        <input type="text" id="lastname">
+        <input type="button" id="lbutton" value="Display second Name">
+    </span>
+    </br>
+    <script>
+        var fbutton = document.getElementById("fbutton");
+        fbutton.addEventListener('click', () => {
+            alert(document.getElementById("firstname").value);
+        });
+
+        var lbutton = document.getElementById("lbutton");
+        lbutton.addEventListener('click', () => {
+            alert(document.getElementById("lastname").value);
+        });
+    </script>
+</body>
+
+</html>
